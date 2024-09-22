@@ -2,6 +2,12 @@
 
 A simple ToDo List application built with TypeScript, React, and Node.js. This project demonstrates the use of modern web development technologies and practices, including Jest for testing and Prettier for code formatting.
 
+### Things that went well
+I've not used React and typescript for a while and this was a bit of a refresher for me, its also my first Next.js project. In general it was a bit of a re-awakening of some skills I've not used for a couple of years
+
+### Things that could be better
+The tests are very limited, more unit and integration tests are needed and if you were going to production some end-to-end tests would'nt go amiss. I stuck to the brief of a simple to-do list app but for anything more advanced the security needs improving as well as a proper concept of users. I would use some sort of third party for that such as Okta or Azure Entra. 
+
 ## Table of Contents
 
 - [Installation](#installation)
