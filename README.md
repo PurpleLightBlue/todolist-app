@@ -8,8 +8,6 @@ A simple ToDo List application built with TypeScript, React, and Node.js. This p
 - [Usage](#usage)
 - [Testing](#testing)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
