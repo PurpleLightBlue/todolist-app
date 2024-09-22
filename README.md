@@ -13,23 +13,23 @@ A simple ToDo List application built with TypeScript, React, and Node.js. This p
 
 1. **Clone the repository:**
 
-   ```sh
-   git clone https://github.com/yourusername/todolist-app.git
-   cd todolist-app
-   ```
+```sh
+git clone https://github.com/yourusername/todolist-app.git
+cd todolist-app
+```
 2. **Install Dependencies**
 ```
 npm install
 ```
 ## Usage
 1. **Start the development server:**
-   ```
-   npm run dev
-   ```
+```
+npm run dev
+```
 2. **Open your browser and navifgate to:**
-  ```
-  http://localhost:3000
-  ```
+```
+http://localhost:3000
+```
 ## Testing
 
 This project uses Jest for unit testing. To run the tests, use the following command:
