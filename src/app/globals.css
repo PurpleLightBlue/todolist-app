@@ -122,7 +122,7 @@ ul li.checked span {
 
 /* Clear floats after the header */
 .header:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
