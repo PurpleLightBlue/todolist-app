@@ -57,9 +57,9 @@ Ran all test suites.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Configuration
+## Configuration
 
-## Prettier
+**Prettier**
 This project uses Prettier for code formatting. The confguration is defined in the .prettierrc file
 ```
 {
