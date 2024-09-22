@@ -59,7 +59,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Configuration
 
-**Prettier**
+### Prettier
 This project uses Prettier for code formatting. The confguration is defined in the .prettierrc file
 ```
 {
@@ -73,7 +73,7 @@ This project uses Prettier for code formatting. The confguration is defined in t
 }
 ```
 
-## ESLint
+### ESLint
 
 ESLint is used for linting the code. The configuration is defined in the .eslintrc.json file:
 ```
