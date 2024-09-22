@@ -105,7 +105,7 @@ ESLint is used for linting the code. The configuration is defined in the .eslint
 }
 ```
 
-## Jest
+### Jest
 
 Jest is configured in the jest.config.js file:
 ```
