@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ToDo List App
 
-## Getting Started
+A simple ToDo List application built with TypeScript, React, and Node.js. This project demonstrates the use of modern web development technologies and practices, including Jest for testing and Prettier for code formatting.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/yourusername/todolist-app.git
+   cd todolist-app
+   ```
+2. **Install Dependencies**
 ```
+npm install
+```
+## Usage
+1. **Start the development server:**
+   ```
+   npm run dev
+   ```
+2. **Open your browser and navifgate to:**
+  ```
+  http://localhost:3000
+  ```
+## Testing
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project uses Jest for unit testing. To run the tests, use the following command:
+```
+npm run test
+```
+## Example Test Output
+```
+> jest
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ PASS  src/__tests__/todoService.test.ts
+  todoService
+    ✓ should fetch all to-do items (xx ms)
+    ✓ should add a new to-do item (xx ms)
+    ✓ should delete a to-do item by ID (xx ms)
+    ✓ should toggle the completion status of a to-do item (xx ms)
+    ✓ should search for to-do items using fuzzy search (xx ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        xx s
+Ran all test suites.
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Configuration
 
-To learn more about Next.js, take a look at the following resources:
+## Prettier
+This project uses Prettier for code formatting. The confguration is defined in the .prettierrc file
+```
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "endOfLine": "lf"
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ESLint is used for linting the code. The configuration is defined in the .eslintrc.json file:
+```
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "indent": ["error", 2]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+```
 
-## Deploy on Vercel
+## Jest
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Jest is configured in the jest.config.js file:
+```
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
+};
+```
